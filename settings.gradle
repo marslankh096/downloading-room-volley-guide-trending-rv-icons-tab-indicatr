@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url "https://maven.aliyun.com/repository/jcenter" }
+
+        maven { url 'https://maven.fabric.io/public' }
+        maven {
+            url = "https://jitpack.io"
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://maven.aliyun.com/repository/jcenter" }
+        maven {
+            url = "https://jitpack.io"
+        }
+        maven { url 'https://maven.fabric.io/public' }
+
+    }
+}
+rootProject.name = "Arslan Video Downloader & Video Saver"
+include ':app'

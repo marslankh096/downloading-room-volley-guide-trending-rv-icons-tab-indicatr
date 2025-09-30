@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/datehistorymain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_6sdp"
+                android:text="Today - 12 Jan 2023"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <!-- Add the SearchView widget -->
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchViewHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:iconifiedByDefault="false"
+                android:queryHint="Search history..." />
+        </LinearLayout>
+
+        <!-- Line separator -->
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/headerLayout"
+            android:background="@drawable/separator_line" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewHistory2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/separator"
+            tools:listitem="@layout/history_item" />
+
+        <!-- Add a Clear History button -->
+        <ImageView
+            android:id="@+id/clearHistoryButton"
+            android:layout_width="25dp"
+            android:layout_height="22dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="9dp"
+            android:src="@drawable/delsvg" />
+
+    </RelativeLayout>
+</FrameLayout>

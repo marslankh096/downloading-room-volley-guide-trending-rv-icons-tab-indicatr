@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/_4sdp"
+        android:layout_marginStart="@dimen/_11sdp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/row_history_imdb_image3"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_margin="@dimen/_4sdp"
+            android:src="@drawable/ic_twitter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/row_history_subtitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_6sdp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/row_history_imdb_image3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/row_history_title3"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_55sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:text="Medium Text asnhk,dahskjdfakjs jkfshakjfhkasdhkjf  ajhsdkjahskdhaksjdh akjshd "
+            android:textColor="#7B7B7B"
+            android:textSize="11sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/row_history_imdb_image3"
+            app:layout_constraintTop_toBottomOf="@+id/row_history_subtitle3" />
+
+
+        <ImageView
+            android:id="@+id/dots_b3"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_margin="@dimen/_7sdp"
+            android:src="@drawable/dot"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dateTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp"
+            android:padding="@dimen/_6sdp"
+            android:text="Today - 12 Jan 2023"
+            android:textColor="#E4DBDB"
+            android:textSize="7dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dots_b3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
